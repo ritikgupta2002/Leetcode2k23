@@ -26,8 +26,14 @@ public:
             }
         }//storing the frequecy of each char present in t 
 
-        if(m==n)return true;
-        else return false;
+        return m==n;
 
     }
 };
+
+// time complexity :- O(1(for unordered map operations )* n )+ O(1(for unordered map operations )* n )
+// time complexity :- O(2n)
+
+//space complexity :-O(n)+O(n)=O(2n)
+
+
