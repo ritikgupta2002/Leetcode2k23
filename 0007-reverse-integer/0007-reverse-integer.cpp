@@ -8,12 +8,12 @@ public:
             int temp;
         while(n!=0){
             temp=n%10;
-            rev_no=(rev_no)*10+temp;
+            if(rev_no<INT_MIN/10||rev_no>INT_MAX/10) return 0;
+            rev_no=(rev_no)*10+temp;//rev_no * 10 is the real cause of overflow 
             n/=10;
         }
         rev_no*=sign;
-        if(rev_no<INT_MIN || rev_no>INT_MAX) return 0;
-        else return rev_no;
+        return rev_no;
 
     }
 };
