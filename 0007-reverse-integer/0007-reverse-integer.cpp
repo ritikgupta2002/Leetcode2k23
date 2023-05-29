@@ -17,4 +17,4 @@ public:
 
     }
 };
-//time complexity :- O(log base 10(x))
+//time complexity :- log10 (x);
