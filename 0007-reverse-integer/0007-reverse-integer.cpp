@@ -8,7 +8,7 @@ public:
             int temp;
         while(n!=0){
             temp=n%10;
-            rev_no=(rev_no)*10ll+temp;
+            rev_no=(rev_no)*10+temp;
             n/=10;
         }
         rev_no*=sign;
