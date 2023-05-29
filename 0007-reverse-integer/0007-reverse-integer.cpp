@@ -2,7 +2,7 @@ class Solution {
 public:
     int reverse(int x) {
 
-        long int  rev_no=0;
+        int rev_no=0;
         int sign=(x<0)?-1:1;
         int n=abs(x);
             int temp;
@@ -17,3 +17,4 @@ public:
 
     }
 };
+//time complexity :- 
