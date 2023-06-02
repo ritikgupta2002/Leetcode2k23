@@ -22,5 +22,5 @@ public:
     }
 };
 
-//follow up question time compleixty will be t.c:- 10^9(O(100)+log base 2 (10000));
-//t.c= 10^9(O(100+13.458))  t.c=10^9(O(113))=10^9*O(C) ~ O(10^9) 
+//follow up question time compleixty will be t.c:- 10^9(O(100)*log base 2 (10000));
+//t.c= 10^9(O(100*13.458))  t.c=10^9(O(1300))=10^9*O(1300) ~ O(10^9) 
