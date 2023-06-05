@@ -16,7 +16,7 @@ public:
                        m[s[i]]=t[i];
                       
                 }
-                else if(m.find(s[i])!=m.end()){
+                else{
                     if(m[s[i]]!=t[i]){
                         return false;
                     }
@@ -26,3 +26,4 @@ public:
         return true;
     }
 };
+//time complexity :- O(s.length())*O(128)= ~O(s.length)
