@@ -12,3 +12,22 @@ public:
 };
 // time complexity:- O(n)
 // space complexity:- O(1)
+
+
+//second approach 
+
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+     
+       int total = nums.size()*(nums.size() + 1)/2;
+       int sum=0;
+  
+       for(auto i : nums){
+            sum+=i;
+       }
+       return total-sum;
+ 
+
+    }
+};
