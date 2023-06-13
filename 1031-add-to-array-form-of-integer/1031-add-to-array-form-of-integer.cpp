@@ -12,7 +12,7 @@ public:
                 sum+=k%10;
                 carry=sum/10;
                 k=k/10;
-                ans.push_back(sum%10);
+                ans.push_back(sum%10);        
             }
             if(carry)ans.push_back(carry);
             reverse(ans.begin(),ans.end());
