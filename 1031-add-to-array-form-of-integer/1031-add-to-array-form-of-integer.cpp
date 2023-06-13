@@ -19,3 +19,7 @@ public:
             return ans;
     }
 };
+
+
+// time complexity  :- O(max(n, log k ));
+// space complexity :- O(n)
