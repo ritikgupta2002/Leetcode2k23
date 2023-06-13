@@ -15,8 +15,12 @@ public:
              j++;
            }
        }
-       
+
 
 
     }
 };
+
+
+// time complexity:- O(n)+O(3)*O(300) = ~O(n)+O(900)
+// space complexity:-O(3);
