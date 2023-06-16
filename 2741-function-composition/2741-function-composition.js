@@ -4,11 +4,10 @@
  */
 var compose = function(functions) {
 	return function(x) {
-        for(const fn of functions.reverse()){
-            x=fn(x);
-        }
-        return x;
-    }
+       return functions.reduceRight((acc,fun)=>{
+        return fun(acc);
+       },x);
+    } 
 };
 
 /**
