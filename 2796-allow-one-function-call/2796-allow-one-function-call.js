@@ -10,7 +10,7 @@ var once = function(fn) {
             return undefined;
         }
         count++;
-        return fn(...args);
+        return fn.apply(this,args);
      
     }
 };
