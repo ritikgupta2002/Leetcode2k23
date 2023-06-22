@@ -14,6 +14,9 @@ var timeLimit = function(fn, t) {
             }catch(err){
                 reject(err);
             }
+            finally{
+                clearTimeout(id);
+            }
         });
     }
 };
