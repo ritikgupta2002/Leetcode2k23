@@ -5,11 +5,15 @@
  */
 var timeLimit = function(fn, t) {
 	return async function(...args) {
-        return new Promise((resolve,reject)=>{
-            setTimeout(()=>reject("Time Limit Exceeded"),t);
-            fn(...args)
-                        .then((res)=>resolve(res))
-                        .catch((err)=>reject(err));
+        return new Promise(async (resolve,reject)=>{
+            const id= setTimeout(()=>reject("Time Limit Exceeded"),t);
+            try{
+                const res= await fn(...args);
+                //its given the fn is asynchronous so we used await .
+                resolve(res);
+            }catch(err){
+                reject(err);
+            }
         });
     }
 };
