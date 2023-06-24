@@ -10,7 +10,6 @@ public:
           s.insert(nums[i]);
       }
       int maxlcs=0;
-      int startofsequence;
       for(int i=0 ;i<nums.size();i++){
          
           if(s.find(nums[i]-1)!=s.end()){
