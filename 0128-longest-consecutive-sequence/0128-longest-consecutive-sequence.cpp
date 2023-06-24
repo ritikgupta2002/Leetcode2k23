@@ -15,9 +15,7 @@ public:
          
           if(s.find(nums[i]-1)!=s.end()){
               continue;
-              
           }
-          startofsequence = nums[i];
           int value=nums[i];
           int cs=1;
           while(s.find(++value)!=s.end()) {
