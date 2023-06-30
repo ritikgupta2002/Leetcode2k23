@@ -4,18 +4,10 @@
  * @return {Array[]}
  */
 var chunk = function(arr, size) {
-    const res=[];
-    let subarray=[];
-    for(let i =0 ; i<arr.length; i++){
-        subarray.push(arr[i]);
-        if(subarray.length===size){
-            res.push(subarray);
-            subarray=[];
-        }
-    }
-    if(subarray.length){
-        res.push(subarray);
-    }
-
-    return res;
+   const res=[];
+   for(let i =0 ;i< arr.length; i+=size){
+      res.push(arr.slice(i,i+size));
+      //creates a new subarray of size <=chunk size and push it to res array
+   }
+   return res;
 };
