@@ -1,20 +1,14 @@
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        map<int,int> m ;
-        for(auto i : nums ){
-            m[i]++;
+        int i=0;
+        for(auto e : nums ){
+            if(i==0||i==1||e!=nums[i-2]){
+                nums[i]=e;
+                i++;
+            }
         }
-        int count=0;
-        int k=0;
-        for(auto i=m.begin();i!=m.end();i++){
-           for(int j=0;j<2;j++){
-               if(i->second){
-                   nums[k++]=i->first;
-                   i->second--;
-               }
-           }
-        }
-        return k;
+        return i ;
     }
 };
+//optimised soln 
