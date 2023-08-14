@@ -4,7 +4,7 @@ public:
         long i=0 ;
         long j=0 ;
         long total=0;
-        long maxLen=0;
+        long maxLen=1;
         sort(nums.begin(),nums.end());
         while(j<nums.size()){
             total+=nums[j];
