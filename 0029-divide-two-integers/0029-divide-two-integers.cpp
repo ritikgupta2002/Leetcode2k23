@@ -14,7 +14,7 @@ public:
        }
 
        if(ans==1<<31&&isPositive) return INT_MAX;
-       if(ans>1<<31&&isPositive==false) return INT_MIN;
+    //    if(ans>1<<31&&isPositive==false) return INT_MIN;
        return isPositive?ans:-ans;
     }
 };
