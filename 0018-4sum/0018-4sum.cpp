@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<vector<int>> fourSum(vector<int>& nums, int target) {
         int i=0,j,l,r;
-        long long  goal;
+        long long goal;
         vector<vector<int>> ans;
         sort(nums.begin(),nums.end());
         while(i<nums.size()){
