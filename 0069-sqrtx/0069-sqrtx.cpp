@@ -11,6 +11,7 @@ public:
                 lo=mid+1;
             }
             else if(mid*mid>x) hi=mid-1;
+            
         }
         return (int)ans;
     }
